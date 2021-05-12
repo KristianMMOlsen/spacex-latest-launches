@@ -31,7 +31,7 @@ const LAUNCHES_QUERY = `
 
 
 function App() {
-  
+
   const launches = useLaunches()
 
   return (

@@ -1,38 +1,55 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* removes the default margin and padding from the bootstrap container*/
+
+.container {
+    margin: 0;
+    padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* positioning of the launch list and makes is slightly seethrough */
+
+.launch-list-style {
+    padding-top: 250px;
+    opacity: 0.97;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+/* sets height and position for the whole page */
+
+html {
+    position: relative;
+    min-height: 100%;
+    background-color: #f8f9fa;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* Margin bottom by footer height */
+
+body {
+    margin-bottom: 60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/* Sets the fixed height of the footer */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #212529;
+}
+
+
+/* imports the background image and sets its height and width to fit the page */
+
+.bg-img {
+    background-image: url("spacexbg.jpg");
+    height: 980px;
+    width: 100%;
 }
